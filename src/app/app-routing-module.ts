@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Layout } from './template/layout/layout';
 
 const routes: Routes = [
-  {
+   {
     path: 'paginas',
     component: Layout,
     children: [
@@ -21,7 +21,7 @@ const routes: Routes = [
         path: 'galeria',
         loadChildren: () => import('./galeria/galeria-module').then(m => m.GaleriaModule)
       }
-    ]} 
+    ]}
 ];
 
 @NgModule({

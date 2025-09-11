@@ -7,7 +7,7 @@
     },
     {
       "id": "00f0",
-      "nome": "Praias",
+      "nome": "Praia",
       "descricao": "Massaguaçu, Praia Grande."
     },
     {
@@ -17,52 +17,44 @@
     },
     {
       "id": "d19b",
-      "nome": "Aracaju",
-      "descricao": "Cidade"
+      "nome": "Comidas",
+      "descricao": "Churrasco, feijoada, lasanha..."
     },
     {
       "id": "19bf",
-      "nome": "Pousadas",
-      "descricao": "pousadas pelo Brasil\n"
+      "nome": "Parques",
+      "descricao": "Ex: Parque Ibirapuera, Parque Burle Max..."
     }
   ],
   "lugares": [
     {
-      "id": "cd4a",
-      "nome": "teste",
-      "categoria": "Restaurantes",
-      "localizacao": "São Paulo",
-      "urlFoto": "te",
-      "avaliacao": "3"
-    },
-    {
-      "id": "4f8a",
-      "nome": "teste",
-      "categoria": "Aracaju",
-      "localizacao": "São Paulo",
-      "urlFoto": "te",
-      "avaliacao": "2"
-    },
-    {
       "id": "c978",
-      "nome": "Sala de estar",
-      "categoria": "Hoteis",
+      "nome": "Praia Grande",
+      "categoria": "Praia",
       "localizacao": "São Paulo",
-      "urlFoto": "te",
+      "urlFoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEwso0-zNedpB8LAKDg-lftxRG990dA1QaJQ&s",
       "avaliacao": "1"
     },
     {
       "id": "5e42",
       "nome": "Praia do Espelho",
-      "categoria": "Praias",
+      "categoria": "Praia",
       "localizacao": "Bahia",
+      "urlFoto": "https://tse2.mm.bing.net/th/id/OIP.yuJF7ZEgp9N3z6nIRh_YlQHaE8?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "avaliacao": "4"
+    },
+        {
+      "id": "122",
+      "nome": "Praia da Cocanha",
+      "categoria": "Praia",
+      "localizacao": "Caraguatatuba - SP",
       "urlFoto": "https://tse2.mm.bing.net/th/id/OIP.yuJF7ZEgp9N3z6nIRh_YlQHaE8?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3",
       "avaliacao": "4"
     },
     {
       "id": "5446",
       "nome": "Parque Iberapuera",
-      "categoria": "Aracaju",
+      "categoria": "Parques",
       "localizacao": "São Paulo",
       "urlFoto": "https://thvnext.bing.com/th/id/OLC.G1ce1qdwnqZ0Rw480x360?w=334&h=200&c=8&rs=1&qlt=90&o=6&cdv=1&pid=Local",
       "avaliacao": "3"
