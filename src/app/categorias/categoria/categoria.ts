@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
-import { CategoriaServicee } from '../categoria-service';
+import { CategoriaService } from '../categoria-service';
 
 @Component({
   selector: 'app-categoria',
@@ -11,7 +11,7 @@ import { CategoriaServicee } from '../categoria-service';
 export class Categoria {
   camposForm: FormGroup;
 
-  constructor(private service: CategoriaServicee) {
+  constructor(private service: CategoriaService) {
     this.camposForm = new FormGroup({
       nome: new FormControl('', Validators.required),
       descricao: new FormControl('', Validators.required)
@@ -30,8 +30,9 @@ export class Categoria {
     },
   })
   }
-  
 }
+
+
   isCampoInvalido(campo: string): boolean {
     const nomeCampo = this.camposForm.get(campo);
     return nomeCampo?.invalid && nomeCampo?.touched || false;

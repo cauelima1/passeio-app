@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TemplateRoutingModule } from './template-routing-module';
 import { Layout } from './layout/layout';
-import { CategoriasModule } from '../categorias/categorias-module';
+
 
 
 @NgModule({
@@ -11,7 +11,6 @@ import { CategoriasModule } from '../categorias/categorias-module';
     Layout
   ],
   imports: [ 
-    CategoriasModule,
     CommonModule,
     TemplateRoutingModule
   ]

@@ -6,9 +6,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CategoriaServicee {
+export class CategoriaService {
   constructor(private http: HttpClient) { 
-
   }
 
   salvar (categoria: Categoria): Observable<Categoria> {
