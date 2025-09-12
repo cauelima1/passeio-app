@@ -24,6 +24,16 @@
       "id": "19bf",
       "nome": "Parques",
       "descricao": "Ex: Parque Ibirapuera, Parque Burle Max..."
+    },
+    {
+      "nome": "Restaurante",
+      "descricao": "MC Donalds, Habbibs, Pizzaria Golden",
+      "id": "1vH579T"
+    },
+    {
+      "nome": "Praias",
+      "descricao": "Massaguaçu, Cocanha, Toc Toc Grande, Maresias\n",
+      "id": "DVnrV1Q"
     }
   ],
   "lugares": [
@@ -43,7 +53,7 @@
       "urlFoto": "https://tse2.mm.bing.net/th/id/OIP.yuJF7ZEgp9N3z6nIRh_YlQHaE8?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3",
       "avaliacao": "4"
     },
-        {
+    {
       "id": "122",
       "nome": "Praia da Cocanha",
       "categoria": "Praia",
