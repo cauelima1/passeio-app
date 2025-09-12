@@ -1,13 +1,20 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Layout } from './template/layout/layout';
+
 import { TemplateModule } from './template/template-module';
+import { Landingpage } from './landingpage/landingpage';
+import { authGuard } from './auth-guard';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren:() => import('./template/template-module').then(m => TemplateModule)
-  }
+    component: Landingpage
+  },
+  {
+    path: 'paginas',
+    loadChildren:() => import('./template/template-module').then(m => TemplateModule),
+    canActivate: [ authGuard ]
+  } 
  ];
 
 @NgModule({

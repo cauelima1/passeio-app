@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LayoutProps } from '../../lugares/lugar-component/layoutprops';
 import { ActivatedRoute, Router } from '@angular/router';
 import { filter, map } from 'rxjs'
+import { AuthGoogleService } from '../../auth-googleService';
 
 
 @Component({
@@ -15,8 +16,9 @@ export class Layout implements OnInit {
 
   constructor(
     private router: Router,
-    private activatedRoute: ActivatedRoute){
-
+    private activatedRoute: ActivatedRoute,
+    private loginService: AuthGoogleService
+    ){
     }
   
 
@@ -36,6 +38,10 @@ export class Layout implements OnInit {
         rotaFilha = rotaFilha.firstChild;
       }
       return rotaFilha?.snapshot.data as LayoutProps;
+    }
+
+    logOut (){
+      return this.loginService.logout();
     }
 
 }
