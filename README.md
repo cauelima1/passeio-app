@@ -1,59 +1,41 @@
 # PasseioApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.1.
+Projeto desenvolvido utilizando Angular CLI.
 
-## Development server
+Se trata de uma aplicação com login oauth do Google, onde é possível cadastrar, consultar e avaliar lugares.
 
-To start a local development server, run:
+# Tecnologias utilizadas
 
-```bash
-ng serve
-```
+- Angular CLI
+- TypeScript
+- HTML
+- Tailwind CSS
+- Google oauth
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# Build da aplicação via Docker
 
-## Code scaffolding
+A aplicação 
+1. Construir a Imagem Docker da API, execute:
+No terminal, dentro da da pasta API do projeto, execute:
+docker build -t passeio-api .
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Esse comando irá criar uma imagem chamada passeio-api com base nas instruções do Dockerfile.
 
-```bash
-ng generate component component-name
-```
+2. Executar o container da API
+Após a imagem ser construída, rode o container com:
+docker run -p [sua porta]:4000 passeio-api
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Construir a imagem Docker da aplicação
+No terminal, dentro da raiz do projeto, execute:
+docker build -t passeio-app .
 
-```bash
-ng generate --help
-```
 
-## Building
+Esse comando irá criar uma imagem chamada passeio-app com base nas instruções do Dockerfile.
 
-To build the project run:
+4. Executar o container
+Após a imagem ser construída, rode o container com:
+docker run -p [sua porta]:80 passeio-app
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+A aplicação estará disponível em http://localhost:[porta da aplicação]
