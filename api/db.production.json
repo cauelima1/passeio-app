@@ -1,0 +1,19 @@
+{
+  "categorias": [
+    {
+      "id": "00f0",
+      "nome": "Praia",
+      "descricao": "Massaguaçu, Praia Grande."
+    }
+  ],
+  "lugares": [
+    {
+      "id": "c978",
+      "nome": "Praia Grande",
+      "categoria": "Praia",
+      "localizacao": "São Paulo",
+      "urlFoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEwso0-zNedpB8LAKDg-lftxRG990dA1QaJQ&s",
+      "avaliacao": "1"
+    }
+ ]
+}

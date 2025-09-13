@@ -34,6 +34,11 @@
       "nome": "Praias",
       "descricao": "Massaguaçu, Cocanha, Toc Toc Grande, Maresias\n",
       "id": "DVnrV1Q"
+    },
+    {
+      "nome": "teste",
+      "descricao": "teste",
+      "id": "lGgMgK1"
     }
   ],
   "lugares": [
@@ -68,6 +73,14 @@
       "localizacao": "São Paulo",
       "urlFoto": "https://thvnext.bing.com/th/id/OLC.G1ce1qdwnqZ0Rw480x360?w=334&h=200&c=8&rs=1&qlt=90&o=6&cdv=1&pid=Local",
       "avaliacao": "3"
+    },
+    {
+      "nome": "caue",
+      "categoria": "Selecione uma categoria",
+      "localizacao": "tes",
+      "urlFoto": "teste",
+      "avaliacao": "3",
+      "id": "DGHAQKh"
     }
   ]
 }
